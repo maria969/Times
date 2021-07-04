@@ -15,6 +15,12 @@ public class SearchWireFrame: SearchWireFrameInterface {
     
     //MARK: - Public Methods
     public func presentResults(articles: [ArticleEntity], fromView view: SearchViewControllerInterface) {
-        //TODO: - Present Detail
+        let viewController: UIViewController = view.viewController
+        guard let navigationController: UINavigationController = viewController.navigationController else { return }
+        
+        let resultVC: SearchResultViewControllerInterface = Resolver.resolve()
+        resultVC.assign(articles: articles)
+        
+        navigationController.pushViewController(resultVC.viewController, animated: true)
     }
 }
