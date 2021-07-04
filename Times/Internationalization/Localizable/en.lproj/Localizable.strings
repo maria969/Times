@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Stocks
+
+  Created by Maria Herrero Varas on 04/07/2021.
+  
+*/
+
+//MARK: - General
+
+"times.general.app.title.loading" = "Loading...";
+
+//MARK: - Errors
+
+"times.error.server.general" = "The operation you have requested cannot be carried out at this time. Please try again later.";
+"times.error.server.no_connection" = "You don't have an Internet connection, check your connection settings.";
