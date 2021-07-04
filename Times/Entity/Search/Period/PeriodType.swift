@@ -24,4 +24,15 @@ public enum PeriodType: CaseIterable {
             return "30 días"
         }
     }
+    
+    public var apiString: String {
+        switch self {
+        case PeriodType.oneDay:
+            return "1"
+        case PeriodType.weak:
+            return "7"
+        case PeriodType.month:
+            return "30"
+        }
+    }
 }

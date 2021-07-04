@@ -8,7 +8,7 @@
 import Foundation
 
 public enum SharedType: CaseIterable {
-    case twitter
+    case twitter 
     case facebook
     
     //MARK: - Public Properties
@@ -20,5 +20,23 @@ public enum SharedType: CaseIterable {
         case SharedType.facebook:
             return "Facebook"
         }
+    }
+    public var apiDescription: String {
+        switch self {
+        case SharedType.twitter:
+            return "twitter"
+        case SharedType.facebook:
+            return "facebook"
+        }
+    }
+}
+
+//MARK: - Array Methods
+
+extension Array where Element == SharedType {
+    
+    public var apiString: String {
+        return self.map { $0.apiDescription }
+            .joined(separator: ";")
     }
 }
