@@ -29,6 +29,7 @@ extension Resolver: ResolverRegistering {
     private static func registerViewControllers() {
         self.registerSearchViewController()
         self.registerSearchResultViewController()
+        self.registerArticleViewController()
     }
     
     private static func registerSearchViewController() {
@@ -39,5 +40,9 @@ extension Resolver: ResolverRegistering {
     private static func registerSearchResultViewController() {
         self.register { SearchResultViewController(presenter: self.resolve(),
                                                    routing: self.resolve()) as SearchResultViewControllerInterface }
+    }
+    
+    private static func registerArticleViewController() {
+        self.register { ArticleViewController() as ArticleViewControllerInterface }
     }
 }
