@@ -8,6 +8,8 @@
 import Foundation
 
 public protocol BaseViewControllerInterface: ViewControllerRepresentable {
+    func showError(_ error: ErrorEntity, completion: BaseViewController.GeneralCompletion?)
+    
     func showLoading()
     func hideLoading()
 }

@@ -51,6 +51,14 @@ public class BaseViewController: UIViewController {
     
     private func configureView() {
     }
+    
+    //MARK: - AlertMessages
+    
+    public func showError(_ error: ErrorEntity, completion: BaseViewController.GeneralCompletion?) {
+        self.hideLoading()
+        let alertDialog: AlertDialog = AlertDialog(withTitle: "times.general.app.error".localized(), andMessage: error.error.message, buttonText: "Times.general.app.accept".localized(), buttonAction: completion)
+        DispatchQueue.main.async { alertDialog.show(fromView: self) }
+    }
 }
 
 //MARK: - BaseViewControllerInterface
