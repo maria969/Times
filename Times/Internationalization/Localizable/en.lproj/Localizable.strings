@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  Stocks
+
+  Created by Maria Herrero Varas on 04/07/2021.
+  
+*/
+
+//MARK: - General
+
+"times.general.app.title.loading" = "Loading...";
+"times.general.app.accept" = "Acept";
+"times.general.app.error" = "Error";
+
+//MARK: - Errors
+
+"times.error.server.general" = "The operation you have requested cannot be carried out at this time. Please try again later.";
+"times.error.server.no_connection" = "You don't have an Internet connection, check your connection settings.";
+
+//MARK: - Search
+
+"times.search.view.title" = "Search";
+"times.search.view.search.button" = "Search";
+"times.search.view.search_type.title" = "Search type";
+"times.search.view.shared_type.title" = "Shared on";
+"times.search.view.time_frame.title" = "Time frame";
+
+//MARK: - Search Results
+
+"times.search_results.view.title" = "Results";
+
+//MARK: - Article Detail
+
+"times.article.view.title" = "Detail";
+
+//MARK: - Period
+
+"times.period.one_day.description" = "1 day";
+"times.period.weak.description" = "7 days";
+"times.period.month.description" = "30 days";
+
+//MARK: - Shared
+
+"times.shared.twitter.description" = "Twitter";
+"times.shared.twitter.api_description" = "twitter";
+"times.shared.facebook.description" = "Facebook";
+"times.shared.facebook.api_description" = "facebook";
+
+//MARK: - Search Type
+
+"times.search_type.mostmailed.description" = "Most mailed";
+"times.search_type.mostshared.description" = "Most shared";
+"times.search_type.mostviewed.description" = "Most viewed";
+
+
