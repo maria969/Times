@@ -14,20 +14,42 @@ class SearchViewController: BaseViewController {
     
     //MARK: - Private Properties
     
+    private let presenter: SearchPresenterInterface
+    private let routing: SearchWireFrameInterface
+    
+    private lazy var tableView: SearchTableView = {
+        let tableView: SearchTableView = SearchTableView(frame: .zero)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
+    
+    private lazy var searchButton: Button = {
+        let button: Button = Button(frame: .zero)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Buscar", for: .normal)
+        button.backgroundColor = UIColor.systemBlue
+        button.addTarget(self, action: #selector(tapSearchButton), for: .touchUpInside)
+        return button
+    }()
+    
     //MARK: - Intializers
     
-    public init() {
+    public init(presenter: SearchPresenterInterface,
+                routing: SearchWireFrameInterface) {
+        self.presenter = presenter
+        self.routing = routing
         super.init(nibName: nil, bundle: nil)
+        self.presenter.assingView(self)
     }
     
-    @available(*, unavailable, message: "This initialized is not accessible. Use init(e) instead.")
+    @available(*, unavailable, message: "This initialized is not accessible. Use init(presenter: SearchPresenterInterface) instead.")
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        fatalError("This initialized is not accessible. Use init() instead.")
+        fatalError("This initialized is not accessible. Use init(presenter: SearchPresenterInterface) instead.")
     }
     
-    @available(*, unavailable, message: "This initialized is not accessible. Use init() instead.")
+    @available(*, unavailable, message: "This initialized is not accessible. Use init(presenter: SearchPresenterInterface) instead.")
     required init?(coder: NSCoder) {
-        fatalError("This initialized is not accessible. Use init() instead.")
+        fatalError("This initialized is not accessible. Use init(presenter: SearchPresenterInterface) instead.")
     }
     
     override func loadView() {
@@ -43,11 +65,41 @@ class SearchViewController: BaseViewController {
     //MARK: - Layout
     
     private func configureView() {
+        self.tableView.configure()
     }
     
     private func layoutSubviews() {
         self.view.backgroundColor = UIColor.white
         self.title = "Search"
+        self.configureTableView()
+        self.configureButton()
+    }
+    
+    private func configureTableView() {
+        self.view.addSubview(self.tableView)
+        self.tableView.top(withView: self.view)
+        self.tableView.bottom(withView: self.view, constant: -50.0, toSafeArea: true)
+        self.tableView.leading(withView: self.view)
+        self.tableView.trailing(withView: self.view)
+        self.tableView.delegate = self
+    }
+    
+    private func configureButton() {
+        self.view.addSubview(self.searchButton)
+        self.searchButton.bottom(withView: self.view, toSafeArea: true)
+        self.searchButton.trailing(withView: self.view, constant: -20.0)
+        self.searchButton.leading(withView: self.view, constant: 20.0)
+        self.searchButton.height(constant: 40.0)
+    }
+    
+    //MARK: - Events
+    
+    @objc private func tapSearchButton() {
+        self.presenter.searchNews(with: self.tableView.searchItem) { [weak self]
+            (articles) in
+            guard let strongSelf: SearchViewController = self else { return }
+            self?.routing.presentResults(articles: articles, fromView: strongSelf)
+        }
     }
 }
 
@@ -55,3 +107,6 @@ class SearchViewController: BaseViewController {
 
 extension SearchViewController: SearchViewControllerInterface {}
 
+//MARK: - SearchTableViewDelegate
+
+extension SearchViewController: SearchTableViewDelegate {}
