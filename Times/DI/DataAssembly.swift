@@ -15,8 +15,12 @@ extension Resolver {
     //MARK: - Public Methods
     
     static func registerDataComponents() {
+        self.registerGetArticlesApiSource()
     }
     
     //MARK: - Private Methods
     
+    private static func registerGetArticlesApiSource() {
+        self.register { GetArticlesApiSource(client: self.resolve()) as GetArticlesApiSourceInterface }
+    }
 }

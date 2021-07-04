@@ -15,7 +15,12 @@ extension Resolver {
     //MARK: - Public Methods
     
     static func registerRoutingComponents() {
+        self.registerSearchWireFrame()
     }
     
     //MARK: - Private Methods
+    
+    private static func registerSearchWireFrame() {
+        self.register { SearchWireFrame() as SearchWireFrameInterface }
+    }
 }

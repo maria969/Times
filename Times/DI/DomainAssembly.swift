@@ -15,7 +15,12 @@ extension Resolver {
     //MARK: - Public Methods
     
     static func registerDomainComponents() {
+        self.registerGetArticlesInteractor()
     }
     
     //MARK: - Private Methods
+    
+    private static func registerGetArticlesInteractor() {
+        self.register { GetArticlesInteractor(getArticlesApiSource: self.resolve()) as GetArticlesInteractorInterface }
+    }
 }

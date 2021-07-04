@@ -15,7 +15,12 @@ extension Resolver {
     //MARK: - Public Methods
     
     static func registerPresenterComponents() {
+        self.registerSearchPresenter()
     }
     
     //MARK: - Private Methods
+    
+    private static func registerSearchPresenter() {
+        self.register { SearchPresenter(getArticlesInteractor: self.resolve()) as SearchPresenterInterface }
+    }
 }
