@@ -71,6 +71,17 @@
 		4C673316268BC64A00081A43 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C67329F268BC64A00081A43 /* Mappable.swift */; };
 		4C673318268BC64A00081A43 /* InteractivePopGestureInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6732A4268BC64A00081A43 /* InteractivePopGestureInterface.swift */; };
 		4C673319268BC64A00081A43 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6732A5268BC64A00081A43 /* NavigationController.swift */; };
+		4CBC8416269223C700357B73 /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC840B269223C700357B73 /* SearchType.swift */; };
+		4CBC8417269223C700357B73 /* PeriodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC840D269223C700357B73 /* PeriodType.swift */; };
+		4CBC8418269223C700357B73 /* SharedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC840F269223C700357B73 /* SharedType.swift */; };
+		4CBC8419269223C700357B73 /* SearchItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8410269223C700357B73 /* SearchItemEntity.swift */; };
+		4CBC841A269223C700357B73 /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8412269223C700357B73 /* ArticleEntity.swift */; };
+		4CBC841B269223C700357B73 /* MediaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8414269223C700357B73 /* MediaEntity.swift */; };
+		4CBC841C269223C700357B73 /* MediaMetadataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8415269223C700357B73 /* MediaMetadataEntity.swift */; };
+		4CBC8423269223EE00357B73 /* ArticleApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC841F269223EE00357B73 /* ArticleApiModel.swift */; };
+		4CBC8424269223EE00357B73 /* MediaApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8421269223EE00357B73 /* MediaApiModel.swift */; };
+		4CBC8425269223EE00357B73 /* MediaMetadataApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8422269223EE00357B73 /* MediaMetadataApiModel.swift */; };
+		4CBC8428269223FF00357B73 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8427269223FF00357B73 /* ResponseResult.swift */; };
 		4CCC3267268DB9050074CE34 /* SearchViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC3265268DB9050074CE34 /* SearchViewControllerInterface.swift */; };
 		4CCC3268268DB9050074CE34 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC3266268DB9050074CE34 /* SearchViewController.swift */; };
 		4CE6E62626921A21004A109E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE6E62526921A21004A109E /* LaunchScreen.storyboard */; };
@@ -143,6 +154,17 @@
 		4C67329F268BC64A00081A43 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		4C6732A4268BC64A00081A43 /* InteractivePopGestureInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractivePopGestureInterface.swift; sourceTree = "<group>"; };
 		4C6732A5268BC64A00081A43 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		4CBC840B269223C700357B73 /* SearchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
+		4CBC840D269223C700357B73 /* PeriodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodType.swift; sourceTree = "<group>"; };
+		4CBC840F269223C700357B73 /* SharedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedType.swift; sourceTree = "<group>"; };
+		4CBC8410269223C700357B73 /* SearchItemEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemEntity.swift; sourceTree = "<group>"; };
+		4CBC8412269223C700357B73 /* ArticleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
+		4CBC8414269223C700357B73 /* MediaEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaEntity.swift; sourceTree = "<group>"; };
+		4CBC8415269223C700357B73 /* MediaMetadataEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaMetadataEntity.swift; sourceTree = "<group>"; };
+		4CBC841F269223EE00357B73 /* ArticleApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleApiModel.swift; sourceTree = "<group>"; };
+		4CBC8421269223EE00357B73 /* MediaApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaApiModel.swift; sourceTree = "<group>"; };
+		4CBC8422269223EE00357B73 /* MediaMetadataApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaMetadataApiModel.swift; sourceTree = "<group>"; };
+		4CBC8427269223FF00357B73 /* ResponseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
 		4CCC3265268DB9050074CE34 /* SearchViewControllerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerInterface.swift; sourceTree = "<group>"; };
 		4CCC3266268DB9050074CE34 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4CE6E62526921A21004A109E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -295,6 +317,8 @@
 		4C673209268BC64900081A43 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				4CBC8411269223C700357B73 /* Articles */,
+				4CBC840A269223C700357B73 /* Search */,
 				4C67320F268BC64900081A43 /* Error */,
 			);
 			path = Entity;
@@ -333,6 +357,7 @@
 		4C67322A268BC64A00081A43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CBC841E269223EE00357B73 /* Article */,
 				4C67322B268BC64A00081A43 /* Response */,
 				4C67322E268BC64A00081A43 /* Decoder */,
 				4C673233268BC64A00081A43 /* EndPoint */,
@@ -345,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				4C67322C268BC64A00081A43 /* Api */,
+				4CBC8427269223FF00357B73 /* ResponseResult.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -680,6 +706,69 @@
 			path = UINavigationController;
 			sourceTree = "<group>";
 		};
+		4CBC840A269223C700357B73 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC840C269223C700357B73 /* Period */,
+				4CBC840E269223C700357B73 /* Shared */,
+				4CBC8410269223C700357B73 /* SearchItemEntity.swift */,
+				4CBC840B269223C700357B73 /* SearchType.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4CBC840C269223C700357B73 /* Period */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC840D269223C700357B73 /* PeriodType.swift */,
+			);
+			path = Period;
+			sourceTree = "<group>";
+		};
+		4CBC840E269223C700357B73 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC840F269223C700357B73 /* SharedType.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4CBC8411269223C700357B73 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC8413269223C700357B73 /* Media */,
+				4CBC8412269223C700357B73 /* ArticleEntity.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		4CBC8413269223C700357B73 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC8414269223C700357B73 /* MediaEntity.swift */,
+				4CBC8415269223C700357B73 /* MediaMetadataEntity.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		4CBC841E269223EE00357B73 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC8420269223EE00357B73 /* Media */,
+				4CBC841F269223EE00357B73 /* ArticleApiModel.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		4CBC8420269223EE00357B73 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC8421269223EE00357B73 /* MediaApiModel.swift */,
+				4CBC8422269223EE00357B73 /* MediaMetadataApiModel.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		4CCC3263268DB8F00074CE34 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -814,6 +903,7 @@
 			files = (
 				4C673308268BC64A00081A43 /* String+Extension.swift in Sources */,
 				4C6732FB268BC64A00081A43 /* Presenter.swift in Sources */,
+				4CBC841C269223C700357B73 /* MediaMetadataEntity.swift in Sources */,
 				4C673316268BC64A00081A43 /* Mappable.swift in Sources */,
 				4C6732F7268BC64A00081A43 /* AppDelegate.swift in Sources */,
 				4C6732FF268BC64A00081A43 /* InteractorInterface.swift in Sources */,
@@ -825,31 +915,40 @@
 				4C6732DD268BC64A00081A43 /* ApiTrustManager.swift in Sources */,
 				4C673315268BC64A00081A43 /* Queueable.swift in Sources */,
 				4C6732EE268BC64A00081A43 /* EnvironmentType.swift in Sources */,
+				4CBC8425269223EE00357B73 /* MediaMetadataApiModel.swift in Sources */,
 				4C6732DE268BC64A00081A43 /* ApiClient.swift in Sources */,
 				4C6732C0268BC64A00081A43 /* ViewControllerRepresentable.swift in Sources */,
 				4C673313268BC64A00081A43 /* PropertyStoring.swift in Sources */,
+				4CBC8418269223C700357B73 /* SharedType.swift in Sources */,
 				4C6732D2268BC64A00081A43 /* ApiRequesterInterface.swift in Sources */,
 				4C6732DF268BC64A00081A43 /* APIConstants.swift in Sources */,
 				4C6732E8268BC64A00081A43 /* ApiSource.swift in Sources */,
+				4CBC8417269223C700357B73 /* PeriodType.swift in Sources */,
 				4CCC3267268DB9050074CE34 /* SearchViewControllerInterface.swift in Sources */,
 				4C6732F3268BC64A00081A43 /* AppAssembly.swift in Sources */,
 				4CCC3268268DB9050074CE34 /* SearchViewController.swift in Sources */,
+				4CBC8424269223EE00357B73 /* MediaApiModel.swift in Sources */,
 				4C6732BF268BC64A00081A43 /* ViewRepresentable.swift in Sources */,
 				4C6732E1268BC64A00081A43 /* ServerURL.swift in Sources */,
+				4CBC8419269223C700357B73 /* SearchItemEntity.swift in Sources */,
 				4C6732BC268BC64A00081A43 /* LoadingView.swift in Sources */,
+				4CBC841B269223C700357B73 /* MediaEntity.swift in Sources */,
 				4C6732E0268BC64A00081A43 /* APIPathConvertible.swift in Sources */,
 				4C6732C5268BC64A00081A43 /* ErrorEntity.swift in Sources */,
 				4C6732FA268BC64A00081A43 /* PresenterInterface.swift in Sources */,
 				4C6732DC268BC64A00081A43 /* ErrorApiAdapter.swift in Sources */,
 				4C6732B8268BC64A00081A43 /* BaseViewControllerInterface.swift in Sources */,
 				4C6732BD268BC64A00081A43 /* LoadingIndicatorViewInterface.swift in Sources */,
+				4CBC8423269223EE00357B73 /* ArticleApiModel.swift in Sources */,
 				4C6732DA268BC64A00081A43 /* ErrorApiModel.swift in Sources */,
 				4C6732E7268BC64A00081A43 /* ApiSourceIO.swift in Sources */,
 				4C6732ED268BC64A00081A43 /* EnvironmentInterface.swift in Sources */,
 				4C6732EA268BC64A00081A43 /* EnvironmentManagerInterface.swift in Sources */,
+				4CBC8416269223C700357B73 /* SearchType.swift in Sources */,
 				4C6732D4268BC64A00081A43 /* DataApiResponse.swift in Sources */,
 				4C673318268BC64A00081A43 /* InteractivePopGestureInterface.swift in Sources */,
 				4C6732E9268BC64A00081A43 /* EnvironmentManager.swift in Sources */,
+				4CBC8428269223FF00357B73 /* ResponseResult.swift in Sources */,
 				4C6732F2268BC64A00081A43 /* DomainAssembly.swift in Sources */,
 				4C6732D8268BC64A00081A43 /* EndPoint.swift in Sources */,
 				4C673314268BC64A00081A43 /* PropertyStoringAssociationPolicy.swift in Sources */,
@@ -859,6 +958,7 @@
 				4C67330C268BC64A00081A43 /* Array+Extension.swift in Sources */,
 				4C67330A268BC64A00081A43 /* Codable+Extension.swift in Sources */,
 				4C6732BA268BC64A00081A43 /* Loading.swift in Sources */,
+				4CBC841A269223C700357B73 /* ArticleEntity.swift in Sources */,
 				4C6732D3268BC64A00081A43 /* ApiRequester.swift in Sources */,
 				4C6732D7268BC64A00081A43 /* DecodableResult.swift in Sources */,
 				4C6732E2268BC64A00081A43 /* APIPath.swift in Sources */,
