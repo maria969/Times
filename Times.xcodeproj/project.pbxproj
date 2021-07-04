@@ -82,8 +82,6 @@
 		4CBC8424269223EE00357B73 /* MediaApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8421269223EE00357B73 /* MediaApiModel.swift */; };
 		4CBC8425269223EE00357B73 /* MediaMetadataApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8422269223EE00357B73 /* MediaMetadataApiModel.swift */; };
 		4CBC8428269223FF00357B73 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8427269223FF00357B73 /* ResponseResult.swift */; };
-		4CBC846B2692271B00357B73 /* SearchPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC84642692271B00357B73 /* SearchPresenterInterface.swift */; };
-		4CBC846C2692271B00357B73 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC84652692271B00357B73 /* SearchPresenter.swift */; };
 		4CBC847D2692273200357B73 /* SelectorItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC84762692273200357B73 /* SelectorItemTableViewCell.swift */; };
 		4CBC847E2692273200357B73 /* SearchSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC84782692273200357B73 /* SearchSectionHeader.swift */; };
 		4CBC847F2692273200357B73 /* SearchTableViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC84792692273200357B73 /* SearchTableViewIO.swift */; };
@@ -104,6 +102,8 @@
 		4CBC8556269247FE00357B73 /* SearchSectionItemUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8553269247FE00357B73 /* SearchSectionItemUiModel.swift */; };
 		4CBC8557269247FE00357B73 /* SearchSectionUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8554269247FE00357B73 /* SearchSectionUiModel.swift */; };
 		4CBC8558269247FE00357B73 /* SearchItemUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC8555269247FE00357B73 /* SearchItemUiModel.swift */; };
+		4CBC85C826924CD800357B73 /* SearchPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC85C626924CD800357B73 /* SearchPresenterInterface.swift */; };
+		4CBC85C926924CD800357B73 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC85C726924CD800357B73 /* SearchPresenter.swift */; };
 		4CCC3267268DB9050074CE34 /* SearchViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC3265268DB9050074CE34 /* SearchViewControllerInterface.swift */; };
 		4CCC3268268DB9050074CE34 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC3266268DB9050074CE34 /* SearchViewController.swift */; };
 		4CE6E62626921A21004A109E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE6E62526921A21004A109E /* LaunchScreen.storyboard */; };
@@ -187,8 +187,6 @@
 		4CBC8421269223EE00357B73 /* MediaApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaApiModel.swift; sourceTree = "<group>"; };
 		4CBC8422269223EE00357B73 /* MediaMetadataApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaMetadataApiModel.swift; sourceTree = "<group>"; };
 		4CBC8427269223FF00357B73 /* ResponseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
-		4CBC84642692271B00357B73 /* SearchPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenterInterface.swift; sourceTree = "<group>"; };
-		4CBC84652692271B00357B73 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		4CBC84762692273200357B73 /* SelectorItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorItemTableViewCell.swift; sourceTree = "<group>"; };
 		4CBC84782692273200357B73 /* SearchSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSectionHeader.swift; sourceTree = "<group>"; };
 		4CBC84792692273200357B73 /* SearchTableViewIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewIO.swift; sourceTree = "<group>"; };
@@ -209,6 +207,8 @@
 		4CBC8553269247FE00357B73 /* SearchSectionItemUiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSectionItemUiModel.swift; sourceTree = "<group>"; };
 		4CBC8554269247FE00357B73 /* SearchSectionUiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSectionUiModel.swift; sourceTree = "<group>"; };
 		4CBC8555269247FE00357B73 /* SearchItemUiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemUiModel.swift; sourceTree = "<group>"; };
+		4CBC85C626924CD800357B73 /* SearchPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchPresenterInterface.swift; path = Times/Presenter/Search/SearchPresenterInterface.swift; sourceTree = SOURCE_ROOT; };
+		4CBC85C726924CD800357B73 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchPresenter.swift; path = Times/Presenter/Search/SearchPresenter.swift; sourceTree = SOURCE_ROOT; };
 		4CCC3265268DB9050074CE34 /* SearchViewControllerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerInterface.swift; sourceTree = "<group>"; };
 		4CCC3266268DB9050074CE34 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4CE6E62526921A21004A109E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -822,8 +822,8 @@
 		4CBC84632692271B00357B73 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				4CBC84642692271B00357B73 /* SearchPresenterInterface.swift */,
-				4CBC84652692271B00357B73 /* SearchPresenter.swift */,
+				4CBC85C726924CD800357B73 /* SearchPresenter.swift */,
+				4CBC85C626924CD800357B73 /* SearchPresenterInterface.swift */,
 			);
 			name = Search;
 			path = ../../../Times2/Times/Presenter/Search;
@@ -1075,7 +1075,6 @@
 				4C673308268BC64A00081A43 /* String+Extension.swift in Sources */,
 				4CBC84872692281000357B73 /* GetArticlesInteractor.swift in Sources */,
 				4C6732FB268BC64A00081A43 /* Presenter.swift in Sources */,
-				4CBC846B2692271B00357B73 /* SearchPresenterInterface.swift in Sources */,
 				4CBC841C269223C700357B73 /* MediaMetadataEntity.swift in Sources */,
 				4CBC84A52692286200357B73 /* Button.swift in Sources */,
 				4CBC8558269247FE00357B73 /* SearchItemUiModel.swift in Sources */,
@@ -1135,6 +1134,8 @@
 				4CBC8428269223FF00357B73 /* ResponseResult.swift in Sources */,
 				4C6732F2268BC64A00081A43 /* DomainAssembly.swift in Sources */,
 				4C6732D8268BC64A00081A43 /* EndPoint.swift in Sources */,
+				4CBC85C926924CD800357B73 /* SearchPresenter.swift in Sources */,
+				4CBC85C826924CD800357B73 /* SearchPresenterInterface.swift in Sources */,
 				4C673314268BC64A00081A43 /* PropertyStoringAssociationPolicy.swift in Sources */,
 				4CBC84A32692286200357B73 /* RadioButton.swift in Sources */,
 				4C6732BE268BC64A00081A43 /* LoadingIndicatorView.swift in Sources */,
@@ -1152,7 +1153,6 @@
 				4CBC8557269247FE00357B73 /* SearchSectionUiModel.swift in Sources */,
 				4C6732D7268BC64A00081A43 /* DecodableResult.swift in Sources */,
 				4C6732E2268BC64A00081A43 /* APIPath.swift in Sources */,
-				4CBC846C2692271B00357B73 /* SearchPresenter.swift in Sources */,
 				4C6732BB268BC64A00081A43 /* LoadingViewInterface.swift in Sources */,
 				4CBC84A12692286200357B73 /* AlertDialogInterface.swift in Sources */,
 				4C6732F5268BC64A00081A43 /* RoutingAssembly.swift in Sources */,
