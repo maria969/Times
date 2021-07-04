@@ -16,11 +16,16 @@ extension Resolver {
     
     static func registerRoutingComponents() {
         self.registerSearchWireFrame()
+        self.registerSearchResultWireFrame()
     }
     
     //MARK: - Private Methods
     
     private static func registerSearchWireFrame() {
         self.register { SearchWireFrame() as SearchWireFrameInterface }
+    }
+    
+    private static func registerSearchResultWireFrame() {
+        self.register { SearchResultWireFrame() as SearchResultWireFrameInterface }
     }
 }

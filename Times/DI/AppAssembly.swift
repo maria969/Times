@@ -28,10 +28,16 @@ extension Resolver: ResolverRegistering {
     
     private static func registerViewControllers() {
         self.registerSearchViewController()
+        self.registerSearchResultViewController()
     }
     
     private static func registerSearchViewController() {
         self.register { SearchViewController(presenter: self.resolve(),
                                              routing: self.resolve()) as SearchViewControllerInterface }
+    }
+    
+    private static func registerSearchResultViewController() {
+        self.register { SearchResultViewController(presenter: self.resolve(),
+                                                   routing: self.resolve()) as SearchResultViewControllerInterface }
     }
 }
