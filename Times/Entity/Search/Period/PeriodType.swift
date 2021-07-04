@@ -17,11 +17,11 @@ public enum PeriodType: CaseIterable {
     public var description: String {
         switch self {
         case PeriodType.oneDay:
-            return "1 día"
+            return "times.period.one_day.description".localized()
         case PeriodType.weak:
-            return "7 días"
+            return "times.period.weak.description".localized()
         case PeriodType.month:
-            return "30 días"
+            return "times.period.month.description".localized()
         }
     }
     

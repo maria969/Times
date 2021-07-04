@@ -9,8 +9,48 @@
 //MARK: - General
 
 "times.general.app.title.loading" = "Cargando...";
+"times.general.app.accept" = "Aceptar";
+"times.general.app.error" = "Error";
 
 //MARK: - Errors
 
 "times.error.server.general" = "La operación que ha solicitado no puede llevarse a cabo en este momento. Inténtelo más tarde por favor.";
 "times.error.server.no_connection" = "No tienes conexión a Internet, revisa tus ajustes de conexión.";
+
+//MARK: - Search
+
+"times.search.view.title" = "Buscar";
+"times.search.view.search.button" = "Buscar";
+"times.search.view.search_type.title" = "Tipo de busqueda";
+"times.search.view.shared_type.title" = "Compartido en";
+"times.search.view.time_frame.title" = "Periodo de tiempo";
+
+//MARK: - Search Results
+
+"times.search_results.view.title" = "Resultados";
+
+//MARK: - Article Detail
+
+"times.article.view.title" = "Detalle";
+
+//MARK: - Period
+
+"times.period.one_day.description" = "1 día";
+"times.period.weak.description" = "7 días";
+"times.period.month.description" = "30 días";
+
+//MARK: - Shared
+
+"times.shared.twitter.description" = "Twitter";
+"times.shared.twitter.api_description" = "twitter";
+"times.shared.facebook.description" = "Facebook";
+"times.shared.facebook.api_description" = "facebook";
+
+//MARK: - Search Type
+
+"times.search_type.mostmailed.description" = "Más enviado por email";
+"times.search_type.mostshared.description" = "Más compartido";
+"times.search_type.mostviewed.description" = "Más visto";
+
+
+

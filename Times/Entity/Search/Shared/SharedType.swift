@@ -16,17 +16,17 @@ public enum SharedType: CaseIterable {
     public var description: String {
         switch self {
         case SharedType.twitter:
-            return "Twitter"
+            return "times.shared.twitter.description".localized()
         case SharedType.facebook:
-            return "Facebook"
+            return "times.shared.facebook.description".localized()
         }
     }
     public var apiDescription: String {
         switch self {
         case SharedType.twitter:
-            return "twitter"
+            return "times.shared.twitter.api_description".localized()
         case SharedType.facebook:
-            return "facebook"
+            return "times.shared.facebook.api_description".localized()
         }
     }
 }

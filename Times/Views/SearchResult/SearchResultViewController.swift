@@ -62,7 +62,7 @@ class SearchResultViewController: BaseViewController {
     
     private func layoutSubviews() {
         self.view.backgroundColor = UIColor.white
-        self.title = "Results"
+        self.title = "times.search_results.view.title".localized()
         self.configureTableView()
     }
     

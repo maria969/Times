@@ -26,7 +26,7 @@ class SearchViewController: BaseViewController {
     private lazy var searchButton: Button = {
         let button: Button = Button(frame: .zero)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Buscar", for: .normal)
+        button.setTitle("times.search.view.search.button".localized(), for: .normal)
         button.backgroundColor = UIColor.systemBlue
         button.addTarget(self, action: #selector(tapSearchButton), for: .touchUpInside)
         return button
@@ -70,7 +70,7 @@ class SearchViewController: BaseViewController {
     
     private func layoutSubviews() {
         self.view.backgroundColor = UIColor.white
-        self.title = "Search"
+        self.title = "times.search.view.title".localized()
         self.configureTableView()
         self.configureButton()
     }

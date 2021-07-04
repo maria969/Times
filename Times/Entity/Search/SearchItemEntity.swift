@@ -25,14 +25,14 @@ public class SearchItemEntity {
     public func generateItems() -> [SearchSectionUiModel] {
         var items: [SearchSectionUiModel] = []
         
-        let searchSection: SearchSectionUiModel = SearchSectionUiModel(id: .searchType, title: "Tipo de busqueda")
+        let searchSection: SearchSectionUiModel = SearchSectionUiModel(id: .searchType, title: "times.search.view.search_type.title".localized())
         for searchType in SearchType.allCases {
             searchSection.items.append(SearchItemUiModel(id: searchType, title: searchType.description, isSelected: (searchType==self.type)))
         }
         items.append(searchSection)
         
         if self.type == SearchType.mostshared{
-            let sharedSection: SearchSectionUiModel = SearchSectionUiModel(id: .shared, title: "Compartido en")
+            let sharedSection: SearchSectionUiModel = SearchSectionUiModel(id: .shared, title: "times.search.view.shared_type.title".localized())
             
             for sharedType in SharedType.allCases {
                 sharedSection.items.append(SearchItemUiModel(id: sharedType, title: sharedType.description, isSelected: self.sharedType.contains(sharedType)))
@@ -41,7 +41,7 @@ public class SearchItemEntity {
             items.append(sharedSection)
         }
         
-        let periodSection: SearchSectionUiModel = SearchSectionUiModel(id: .period, title: "Periodo de tiempo")
+        let periodSection: SearchSectionUiModel = SearchSectionUiModel(id: .period, title: "times.search.view.time_frame.title".localized())
         
         for period in PeriodType.allCases {
             periodSection.items.append(SearchItemUiModel(id: period, title: period.description, isSelected: (period==self.periodTimeType)))

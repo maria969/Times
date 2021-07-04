@@ -17,11 +17,11 @@ public enum SearchType: CaseIterable {
     public var description: String {
         switch self {
         case SearchType.mostmailed:
-            return "Más enviado"
+            return "times.search_type.mostmailed.description".localized()
         case SearchType.mostshared:
-            return "Más compartido"
+            return "times.search_type.mostshared.description".localized()
         case SearchType.mostviewed:
-            return "Más visto"
+            return "times.search_type.mostviewed.description".localized()
         }
     }
 }
